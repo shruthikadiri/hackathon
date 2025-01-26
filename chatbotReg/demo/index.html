@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>AI TOOLS</h2>
+      <nav>
+        <button>New Contract</button>
+        <button>Contract Upload</button>
+        <button>Bulk Questions</button>
+        <button>Chat</button>
+      </nav>
+    </aside>
+    <main class="chat-window">
+      <header>
+        <h1>Chat Assistant</h1>
+        <div class="selectors">
+          <select>
+            <option value="demo">demo</option>
+          </select>
+          <select>
+            <option value="demo1">demo1</option>
+          </select>
+        </div>
+      </header>
+      <section class="chat-content">
+        <div class="chat-message">
+          <p><strong>User:</strong> What are the key components of the Progress Report?</p>
+        </div>
+        <div class="chat-message assistant">
+          <p><strong>Assistant:</strong> The Progress Report should include...</p>
+        </div>
+      </section>
+      <footer>
+        <input type="text" placeholder="Type your message here...">
+        <button>Send</button>
+      </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
