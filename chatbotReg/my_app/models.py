@@ -13,15 +13,15 @@ class Accommodation(EmbeddedDocument):
 
 class Bhandara(Document):
     full_name = StringField(required=True)
-    abhyasi_id = StringField(required=True, unique=True)
     email = StringField(required=True)
-    phone = StringField(required=True)
-    age = StringField(required=True)
-    registration_timestamp = DateTimeField(default=datetime.utcnow)
-    arrival_date = StringField()
-    departure_date = StringField()
+    mobile = StringField(required=True)
+    age_group = StringField(required=True)
+    abhyasi_id = StringField(required=True, unique=True)
+    arrival_date = StringField(required=True)
+    departure_date = StringField(required=True)
     travel_requirements = EmbeddedDocumentField(TravelRequirements)
     accommodation = EmbeddedDocumentField(Accommodation)
+    registration_timestamp = DateTimeField(default=datetime.utcnow)
 
     meta = {'collection': 'bhandara'}
 
